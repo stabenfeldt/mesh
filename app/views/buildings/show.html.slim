@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @building.name
+p
+  strong Street address:
+  = @building.street_address
+p
+  strong Site:
+  = @building.site
+
+= link_to 'Edit', edit_building_path(@building)
+'|
+= link_to 'Back', buildings_path

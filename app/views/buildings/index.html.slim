@@ -1,0 +1,25 @@
+h1 Listing buildings
+
+table
+  thead
+    tr
+      th Name
+      th Street address
+      th Site
+      th
+      th
+      th
+
+  tbody
+    - @buildings.each do |building|
+      tr
+        td = building.name
+        td = building.street_address
+        td = building.site.name
+        td = link_to 'Show', building
+        td = link_to 'Edit', edit_building_path(building)
+        td = link_to 'Destroy', building, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Building', new_site_building_path(@site)

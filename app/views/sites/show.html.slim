@@ -1,0 +1,17 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @site.name
+p
+  strong City:
+  = @site.city
+p
+  strong Country:
+  = @site.country
+
+= link_to 'Buldings', site_buildings_path(@site)
+'|
+= link_to 'Edit', edit_site_path(@site)
+'|
+= link_to 'Back', sites_path
