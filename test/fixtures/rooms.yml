@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  building: one
+  size: 1.5
+  available_work_desks: 1
+
+two:
+  name: MyString
+  building: two
+  size: 1.5
+  available_work_desks: 1

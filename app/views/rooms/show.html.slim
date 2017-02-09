@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @room.name
+p
+  strong Building:
+  = @room.building
+p
+  strong Size:
+  = @room.size
+p
+  strong Available work desks:
+  = @room.available_work_desks
+
+= link_to 'Edit', edit_room_path(@room)
+'|
+= link_to 'Back', rooms_path
