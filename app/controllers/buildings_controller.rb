@@ -1,6 +1,6 @@
 class BuildingsController < ApplicationController
   before_action :set_building, only: [:show, :edit, :update, :destroy]
-  before_action :set_site, except: [:destroy]
+  before_action :set_site, except: [:destroy, :show, :edit, :update]
 
 
 
@@ -46,7 +46,7 @@ class BuildingsController < ApplicationController
   def update
     respond_to do |format|
       if @building.update(building_params)
-        format.html { redirect_to @building, notice: 'Building was successfully updated.' }
+        format.html { redirect_to site_buildings_path(@building.site), notice: 'Building was successfully updated.' }
         format.json { render :show, status: :ok, location: @building }
       else
         format.html { render :edit }
