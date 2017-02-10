@@ -15,13 +15,13 @@ table
     - @rooms.each do |room|
       tr
         td = room.name
-        td = room.building
+        td = room.building.name
         td = room.size
         td = room.available_work_desks
-        td = link_to 'Show', room
-        td = link_to 'Edit', edit_room_path(room)
-        td = link_to 'Destroy', room, data: { confirm: 'Are you sure?' }, method: :delete
+        td = link_to 'Show', building_rooms_path(@building)
+        td = link_to 'Edit', edit_building_room_path(@building, room)
+        td = link_to 'Destroy', building_room_path(@building, room), data: { confirm: 'Are you sure?' }, method: :delete
 
 br
 
-= link_to 'New Room', new_room_path
+= link_to 'New Room', new_building_room_path(@building)
