@@ -14,6 +14,7 @@ module MESH
     config.generators do |g|
       g.fixture_replacement :fabrication
       g.template_engine     :slim
+
       g.test_framework      :rspec,
         views: false,
         fixtures: true,

@@ -10,6 +10,8 @@ p
   strong Site:
   = @building.site.name
 
+= link_to 'Rooms', building_rooms_path(@building)
+'|
 = link_to 'Edit', edit_building_path(@building)
 '|
 = link_to 'Back', buildings_path

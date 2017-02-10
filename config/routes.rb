@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
   resources :sites
-  resources :rooms
   resources :sites do
     resources :buildings
   end
-    resources :buildings
+
+  resources :buildings do
+    resources :rooms
+  end
 
 end
