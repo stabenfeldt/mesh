@@ -7,22 +7,22 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
+gem 'rails', '~> 5.2.6', '>= 5.2.6.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3', '>= 4.3.11'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.1'
 gem 'slim'
 
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '>= 5.0.6'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -42,7 +42,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.4.0'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -59,5 +59,5 @@ gem 'fabrication'
 
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.5', '>= 3.5.2'
 end
