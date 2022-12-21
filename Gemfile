@@ -19,7 +19,7 @@ gem 'slim-rails'
 gem 'slim'
 
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
+gem 'sass-rails', '>= 6.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
